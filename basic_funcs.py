@@ -1,11 +1,20 @@
 import cv2
 import numpy as np
 
+'''
+Displays image and closes window on any key press
+Inputs:
+- title: string title of image
+- img: image to be displayed
+Outputs:
+- doesn't return anything, just displays image
+'''
 def showimg(title, img):
     cv2.imshow(title, img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+#Read image
 img = cv2.imread("assets/Birthday.jpeg", cv2.IMREAD_COLOR)
 
 #Resize

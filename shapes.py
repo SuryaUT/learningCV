@@ -1,15 +1,23 @@
 import cv2
 
+'''
+Displays image and closes window on any key press
+Inputs:
+- title: string title of image
+- img: image to be displayed
+Outputs:
+- doesn't return anything, just displays image
+'''
 def showimg(title, img):
     cv2.imshow(title, img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+#read and resize image
 img = cv2.imread("assets/Birthday.jpeg", cv2.IMREAD_COLOR)
 img = cv2.resize(img, (800, 1000))
 
 #Border
-
 bordered = cv2.copyMakeBorder(img, 20, 20, 20, 20, borderType=cv2.BORDER_CONSTANT, value=(100, 50, 30))
 showimg("Bordered Boomer", bordered)
 
