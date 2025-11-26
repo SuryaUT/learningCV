@@ -23,7 +23,7 @@ output = cv2.VideoWriter(
     (width, height)
 )
 
-#capture, display, and save webcam + handtracking footage
+#capture, display, and save webcam + handtracking video
 while True:
     ret, frame = cap.read()
     if not ret:
