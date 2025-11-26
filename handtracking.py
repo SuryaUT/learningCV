@@ -23,7 +23,7 @@ output = cv2.VideoWriter(
     (width, height)
 )
 
-#capture, display, and save webcam footage
+#capture, display, and save webcam + handtracking footage
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -43,7 +43,7 @@ while True:
 
     if cv2.waitKey(1) == ord('q'):
         break
-    
+
 #end webcam stream
 cap.release()
 cv2.destroyAllWindows()
