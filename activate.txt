@@ -1,0 +1,9 @@
+To activate venv paste following command into terminal:
+
+.\mp_env\Scripts\activate
+
+If this doesn't work, cd in to this directory with Command Prompt and paste the following:
+
+"C:\Users\surya\AppData\Local\Programs\Python\Python312\python.exe" -m venv mp_env
+
+Then go try the first command again
