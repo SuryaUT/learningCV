@@ -1,11 +1,13 @@
 import cv2
 
+#initialize video capture
 stream = cv2.VideoCapture(0)
 
 if not stream.isOpened():
     print("Error: No stream open")
     exit()
 
+#for saving video
 fps = stream.get(cv2.CAP_PROP_FPS)
 if fps == 0:
     fps = 30   # fallback value
@@ -21,6 +23,7 @@ output = cv2.VideoWriter(
     (width, height)
 )
 
+#capture, display, and save webcam footage
 while(True):
     ret, frame = stream.read()
     if not ret:
@@ -34,5 +37,6 @@ while(True):
     if cv2.waitKey(1) == ord('q'):
         break
 
+#end webcam stream
 stream.release()
 cv2.destroyAllWindows()
