@@ -2,9 +2,6 @@ import cv2
 import mediapipe as mp
 import os
 
-#Setup Assets Folder
-os.makedirs("assets", exist_ok=True)
-
 #Init MediaPipe Modules
 mp_face_detection = mp.solutions.face_detection
 mp_face_mesh = mp.solutions.face_mesh
