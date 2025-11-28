@@ -21,7 +21,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 '''
 SHI-TOMASI METHOD:
 Use 2-D sliding window to detect deviations in
-line trajectories, i.e. corners
+line trajectories, denoting a corner
 
 OBSERVATIONS:
 Works well for the most part but misses some
