@@ -8,7 +8,7 @@ mp_face_mesh = mp.solutions.face_mesh
 mp_draw = mp.solutions.drawing_utils
 
 #Mode Select (Detection / Mesh)
-mode = 'd'
+mode = 'k'
 
 #Open Webcam
 stream = cv2.VideoCapture(0)
@@ -53,7 +53,7 @@ while True:
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
     #Face Detection Mode
-    if mode == 'd':
+    if mode == 'k':
         results = face_detector.process(rgb)
 
         #Draw Detection
@@ -83,7 +83,7 @@ while True:
                 )
 
         #Mesh Label
-        cv2.putText(frame, "Face Mesh (press 'd')",
+        cv2.putText(frame, "Face Mesh (press 'k')",
                     (10, height - 10), cv2.FONT_HERSHEY_SIMPLEX,
                     0.6, (0,255,255), 2)
 
@@ -97,8 +97,8 @@ while True:
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
-    elif key == ord('d'):
-        mode = 'd'
+    elif key == ord('k'):
+        mode = 'k'
     elif key == ord('m'):
         mode = 'm'
 
