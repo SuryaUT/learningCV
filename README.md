@@ -3,6 +3,8 @@
 This repository contains a collection of computer vision projects built using **Python**, **OpenCV**, and **MediaPipe**.  
 The goal of this repo is to learn and implement core CV techniques through hands-on scripts, working step-by-step from the basics to modern, real-time AI-driven models.
 
+---
+
 # 📚 Project Overview
 
 This repository covers multiple computer vision concepts:
@@ -43,12 +45,21 @@ This repository covers multiple computer vision concepts:
 
 ---
 
+## 🧠 Technologies Used
+
+- **Python 3.12** — primary programming language used for all scripts  
+- **OpenCV (cv2)** — image processing, webcam capture, video writing, drawing, transformations  
+- **MediaPipe** — real-time hand tracking, face detection, and face mesh models  
+- **NumPy** — array operations used internally by OpenCV and during image manipulation  
+- **Virtual Environments (venv)** — isolated Python environment for package management  
+
+---
+
 ## 🙌 Credits
 
 A large portion of the conceptual learning roadmap for this repository was inspired by  
 **Sam Westby's OpenCV Python Tutorial Series**:  
 🔗 https://github.com/samwestby/OpenCV-Python-Tutorial  
 
-Special thanks to **Sam Westby** (GitHub: [samwestby](https://github.com/samwestby))  
-for the structured guidance and foundational material that informed the overall progression  
-of this computer vision learning project.
+Special thanks to **Sam Westby** (GitHub: [samwestby](https://github.com/samwestby)) for the structured guidance and foundational  
+material that informed the overall progression of this computer vision learning project.
